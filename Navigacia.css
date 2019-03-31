@@ -1,0 +1,81 @@
+body {
+  margin:0;
+  text-align: justify;
+}
+.navigacia {
+  display: flex;
+  background-color: rgb(225, 225, 225);
+  font-family:Arial;
+  border-bottom:1px solid rgb(150, 150, 150);
+
+}
+.navigacia > a {
+  padding: 10px 25px;
+  text-align: center;
+  border-right: 1px solid rgb(150, 150, 150);
+}
+
+i{
+  padding:0px 15px;
+}
+i:hover {
+  cursor:pointer;
+}
+a {
+  text-decoration: none;
+  color:black;
+}
+a:hover {
+  background-color: rgb(150, 150, 150);
+}
+.navigacia > a:nth-child(1):hover {
+  background-color: rgb(225, 225, 225);
+}
+.search {
+  margin-left: auto;
+  padding:10px 0px;
+
+}
+.btnh{
+  display:none;
+  padding:10px 25px;
+  cursor:pointer;
+}
+.tri_ciary{
+  width:25px;
+  height:4px;
+  margin:3px;
+  background-color:black;
+}
+@media all and (max-width:800px){
+  .navigacia > a{
+    display:none;
+  }
+  .btnh{
+    display:inline-block;
+  }
+}
+@media all and (min-width:768px) {
+  .menu {
+    display: none;
+  }
+  .close{
+    display:none;
+  }
+}
+.po_kliknuti {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(225, 225, 225);
+
+}
+.menu {
+  padding: 10px;
+  border-bottom: 1px solid rgb(150, 150, 150);
+  font-family:Arial;
+}
+
+#myDIV {
+  display: none;
+}
